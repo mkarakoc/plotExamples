@@ -1,5 +1,4 @@
 FROM plotly/dashboardsly
 
-# Customise the ROOTbook
-#pip install --upgrade pip
+# install plotly.offline library
 RUN pip install plotly
