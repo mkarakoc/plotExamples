@@ -10,6 +10,7 @@ USER root
 RUN rm -f ~/start-notebook.sh
 ADD start-notebook.sh start-notebook.sh
 RUN chmod +x ~/start-notebook.sh
+RUN jupyter notebook --generate-config
 
 USER main
 
