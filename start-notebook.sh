@@ -9,4 +9,4 @@ if [ -e $HOME/.binder_start ]; then
 fi
 CMD="$OPTS $@"
 echo "CMD: " $CMD
-jupyter notebook --NotebookApp.iopub_data_rate_limit=10000000000 $CMD
+jupyter notebook --NotebookApp.iopub_data_rate_limit=1.0e11 $CMD
