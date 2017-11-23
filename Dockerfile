@@ -12,5 +12,5 @@ USER main
 RUN pip install plotly
 
 RUN rm -f ~/start-notebook.sh
-COPY start-notebook.sh ~/
+ADD start-notebook.sh start-notebook.sh
 RUN chmod +x ~/start-notebook.sh
