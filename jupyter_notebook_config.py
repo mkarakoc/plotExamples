@@ -561,4 +561,4 @@
 # By default, all installed kernels are allowed.
 # c.KernelSpecManager.whitelist = set([])
 
-NotebookApp.iopub_data_rate_limit = 1e10
+c.NotebookApp.iopub_data_rate_limit = 1e10
