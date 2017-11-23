@@ -7,10 +7,11 @@ USER root
 ## Add dependency
 #RUN apt-get update
 
+RUN rm -f ~/start-notebook.sh
+ADD start-notebook.sh start-notebook.sh
+RUN chmod +x ~/start-notebook.sh
+
 USER main
 
 RUN pip install plotly
 
-RUN rm -f ~/start-notebook.sh
-ADD start-notebook.sh start-notebook.sh
-RUN chmod +x ~/start-notebook.sh
