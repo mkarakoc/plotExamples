@@ -1,6 +1,6 @@
 FROM andrewosh/binder-base
 
-MAINTAINER Jeremy Freeman <freeman.jeremy@gmail.com>
+MAINTAINER Mesut Karakoç <mesudkarakoc@gmail.com>
 
 USER root
 
