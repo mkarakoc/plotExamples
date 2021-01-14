@@ -7,8 +7,10 @@ MAINTAINER Mesut Karakoç <mesudkarakoc@gmail.com>
 USER root
 
 # add jupyter notebooks
+RUN mkdir examples
 #ADD examples    /home/main/examples
-#RUN chown -R main:main /home/main/examples
+RUN chown -R main:main /home/main/examples
+RUN ADD *.ipynb /home/main/examples/
 
 # main user
 USER main
